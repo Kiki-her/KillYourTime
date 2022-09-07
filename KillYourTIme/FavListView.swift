@@ -7,14 +7,36 @@
 
 import SwiftUI
 
+
 struct FavListView: View {
+    let item: [String]
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+//        Text(item[0])
+        if item.count > 0 {
+            List(0 ..< item.count) {
+                fav in
+                HStack {
+                    Text("💡")
+                    Text(item[fav])
+                }
+
+
+            }.onAppear {
+                UITableView.appearance().backgroundColor = UIColor.lightGray
+            }
+        } else {
+                Text("Add Favorite Phrase")
+
+        }
+        
+        
     }
 }
 
-struct FavListView_Previews: PreviewProvider {
-    static var previews: some View {
-        FavListView()
-    }
-}
+//struct FavListView_Previews: PreviewProvider {
+//    static var previews: some View {
+////        FavListView(item: <#T##[String]#>)
+//        FavListView(item: <#[String]#>)
+//    }
+//}
+

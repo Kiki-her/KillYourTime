@@ -8,9 +8,9 @@
 import Foundation
 import SwiftUI
 
-class Pascal : ObservableObject {
+class PascalData : ObservableObject {
     @AppStorage("phrase") var str = "The Word is what you want in your life"
-    func getPascal() {
+    func getPascal() -> String{
         
             guard let url = Bundle.main.url(forResource: "pascal", withExtension: "json") else {
                 fatalError("ファイルが見つからない")
@@ -23,6 +23,6 @@ class Pascal : ObservableObject {
                 fatalError("JSON読み込みエラー")
             }
             let index = Int(arc4random()) % phrases.count
-            str = phrases[index]
+           return phrases[index]
     }
 }

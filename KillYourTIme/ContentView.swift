@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-
+//import CoreData
 
 struct ContentView: View {
     @State var str: String = "The Word is what you want in your life"
@@ -38,7 +38,8 @@ struct ContentView: View {
             HStack {
                 Button(action: {
                     Task {
-//                                 await adviceData.getAdvice()
+                                  await adviceData.getAdvice()
+                       
                         var _buzzWord = await buzz.getBuzz()
                                     var _pascalPhrase = pascalData.getPascal()
                                     var _jokePhrase = jokeData.getJoke()

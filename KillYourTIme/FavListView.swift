@@ -9,6 +9,7 @@ import SwiftUI
 
 
 struct FavListView: View {
+    @StateObject var speech = Speecher()
     let item: [String]
     var body: some View {
 //        Text(item[0])
@@ -16,8 +17,17 @@ struct FavListView: View {
             List(0 ..< item.count) {
                 fav in
                 HStack {
-                    Text("💡")
-                    Text(item[fav])
+                    Button(action: {
+                        speech.speeche(text: item[fav])
+                    }) {
+                        Text("💡")
+                    }
+                    .buttonStyle(PlainButtonStyle())
+//                    Text(item[fav])
+                    NavigationLink(destination: TranslateView(phrase: item[fav])) {
+                        Text(item[fav])
+                           
+                    }
                 }
 
 

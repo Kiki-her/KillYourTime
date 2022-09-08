@@ -24,7 +24,6 @@ class AdviceData: ObservableObject {
 //        let results = [results]
 //    }
     
-    
 //    @Published var resultList: [ResultData]?
     
     func getAdvice() async {
@@ -37,18 +36,22 @@ class AdviceData: ObservableObject {
                // printには出せるけどobjectにアクセスできない
 //                let decoder: JSONDecoder = JSONDecoder()
 //                let json = try decoder.decode(ResultJson.self, from: data)
-                print(object)
+//                print(object)
+//                print(type(of: object))
                 let dic: Dictionary = object as! Dictionary<String, AnyObject>
-                print(dic)
-            
-//                print(json)
-//                print(json)
-               
+//                print(dic["slip"]!["advice"]!!)
+//                print(type(of: dic["slip"]!["advice"]!!))
+//                print(type(of: String(describing: dic["slip"]!["advice"]!!)))
+                let content = String(describing: dic["slip"]!["advice"]!!)
+                print("advice->" + content)
+//               return content
             } catch let error{
                 print(error)
+//
             }
         }
-        task.resume()
+      task.resume()
+
          
         /*
         do {

@@ -21,4 +21,18 @@ class Speecher: ObservableObject {
         utterance.preUtteranceDelay = 0.2
         speechSynthesizer.speak(utterance)
     }
+    func speecheJA(text: String) {
+        speechSynthesizer = AVSpeechSynthesizer()
+        let utterance = AVSpeechUtterance(string: text)
+        utterance.voice  = AVSpeechSynthesisVoice(language: "ja-JP")
+        utterance.rate = 0.4
+        utterance.pitchMultiplier = 1.0
+        utterance.preUtteranceDelay = 0.2
+        speechSynthesizer.speak(utterance)
+    }
+    
+    func reading(en: String, ja: String) async {
+        await speeche(text: en)
+        await speecheJA(text: ja)
+    }
 }

@@ -21,3 +21,7 @@ JS で実装した Joke アプリの Swift 改良版。GET ボタンでパスカ
 - [ ] SwiftUI
 - [ ] Alamofire
 - [ ] AVFoundation
+
+## 参照
+
+- [ ] 100 Powerful Quotos from the Best Classic Literature(https://mrusbooksnreviews.com/quotes-from-classic-literature#:~:text=Iconic%20Quotes%20from%20Classic%20Books&text=%E2%80%9CA%20lady's%20imagination%20is%20very,and%20Prejudice%20by%20Jane%20Austen.&text=%E2%80%9CNowadays%20people%20know%20the%20price,Dorian%20Gray%20by%20Oscar%20Wilde.)

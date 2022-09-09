@@ -8,10 +8,10 @@
 import Foundation
 import SwiftUI
 
-class ClassicData : ObservableObject {
+class QuotoData : ObservableObject {
     func getQuoto() -> String{
         
-            guard let url = Bundle.main.url(forResource: "classic", withExtension: "json") else {
+            guard let url = Bundle.main.url(forResource: "quotos", withExtension: "json") else {
                 fatalError("ファイルが見つからない")
             }
             guard let data = try? Data(contentsOf: url) else {

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		273C3A3128CAE6CF0060838F /* ClassicData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273C3A3028CAE6CF0060838F /* ClassicData.swift */; };
 		273CFC4328C6D2D300B5F45A /* PascalData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273CFC4228C6D2D300B5F45A /* PascalData.swift */; };
 		273CFC4528C6D7B800B5F45A /* joke.json in Resources */ = {isa = PBXBuildFile; fileRef = 273CFC4428C6D7B800B5F45A /* joke.json */; };
 		273CFC4728C6D80A00B5F45A /* JokeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273CFC4628C6D80A00B5F45A /* JokeData.swift */; };
@@ -31,6 +32,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		273C3A2F28CAE1480060838F /* classic.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = classic.json; path = KillYourTime/classic.json; sourceTree = SOURCE_ROOT; };
+		273C3A3028CAE6CF0060838F /* ClassicData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ClassicData.swift; path = KillYourTime/ClassicData.swift; sourceTree = SOURCE_ROOT; };
 		273CFC4228C6D2D300B5F45A /* PascalData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PascalData.swift; sourceTree = "<group>"; };
 		273CFC4428C6D7B800B5F45A /* joke.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = joke.json; sourceTree = "<group>"; };
 		273CFC4628C6D80A00B5F45A /* JokeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeData.swift; sourceTree = "<group>"; };
@@ -98,8 +101,10 @@
 				2759B47828C83DCB00E5750C /* LaunchScreen.storyboard */,
 				2772F50328C57F150088BDBD /* Assets.xcassets */,
 				2772F50D28C5863A0088BDBD /* pascal.json */,
+				273C3A2F28CAE1480060838F /* classic.json */,
 				273CFC4428C6D7B800B5F45A /* joke.json */,
 				273CFC4628C6D80A00B5F45A /* JokeData.swift */,
+				273C3A3028CAE6CF0060838F /* ClassicData.swift */,
 				2759B47628C82C6600E5750C /* BuzzData.swift */,
 				2759B47A28C87F2700E5750C /* CoreData.xcdatamodeld */,
 				2759B47D28C8802000E5750C /* Presistence.swift */,
@@ -205,6 +210,7 @@
 				273CFC4F28C719C500B5F45A /* FavListView.swift in Sources */,
 				2759B47C28C87F2800E5750C /* CoreData.xcdatamodeld in Sources */,
 				2772F51028C592AC0088BDBD /* AdviceData.swift in Sources */,
+				273C3A3128CAE6CF0060838F /* ClassicData.swift in Sources */,
 				273CFC4728C6D80A00B5F45A /* JokeData.swift in Sources */,
 				274059C728C985D7004FC416 /* KeyManger.swift in Sources */,
 				273CFC4B28C6F08500B5F45A /* Speecher.swift in Sources */,

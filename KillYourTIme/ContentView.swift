@@ -13,6 +13,7 @@ struct ContentView: View {
     @StateObject var adviceData = AdviceData()
     @StateObject var pascalData = PascalData()
     @StateObject var jokeData = JokeData()
+    @StateObject var classicData = ClassicData()
     @StateObject var shareTwitter = ShareTwitter()
     @StateObject var speech = Speecher()
     @StateObject var favorite = Favorite()
@@ -40,7 +41,7 @@ struct ContentView: View {
                 Button(action: {
                     Task {
                                   await adviceData.getAdvice()
-                       
+//                        print("!!Quoto", classicData.getQuoto())
                         let _buzzWord = await buzz.getBuzz()
                         let _pascalPhrase = pascalData.getPascal()
                         let _jokePhrase = jokeData.getJoke()

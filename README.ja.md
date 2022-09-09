@@ -12,6 +12,7 @@ JS で実装した Joke アプリの Swift 改良版。GET ボタンでパスカ
 - [ ] Officail Joke API (https://github.com/Kiki-her/official_joke_api)
 - [ ] Bullshit/Buzzword Generator API (https://github.com/sameerkumar18/corporate-bs-generator-api)
 - [ ] Advice Slip JSON API (https://api.adviceslip.com/#endpoint-random)
+- [ ] deepL API (https://www.deepl.com/ja/pro-api)
 
 ## 使用技術
 

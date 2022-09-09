@@ -16,18 +16,11 @@ struct FavItem : Identifiable {
 
 class Favorite: ObservableObject {
     @Published var favList: [FavItem] = []
-//    @Published var updateItem : FavoriteList!
-//    var context = NSManagedObjectContext.self
     func addFav(text: String) {
-//        self.favList.removeAll()
         let phrase = text
         let fav = FavItem(phrase: phrase)
         self.favList.append(fav)
         print(self.favList)
-//        updateItem.id = fav.id
-//        updateItem.phrase = fav.phrase
-//        try! context.save()
-//        updateItem = nil
     }
     
     func pickText() -> [String] {

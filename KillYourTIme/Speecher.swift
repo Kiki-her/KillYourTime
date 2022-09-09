@@ -30,9 +30,4 @@ class Speecher: ObservableObject {
         utterance.preUtteranceDelay = 0.2
         speechSynthesizer.speak(utterance)
     }
-    
-    func reading(en: String, ja: String) async {
-        await speeche(text: en)
-        await speecheJA(text: ja)
-    }
 }

@@ -12,7 +12,6 @@ struct FavListView: View {
     @StateObject var speech = Speecher()
     let item: [String]
     var body: some View {
-//        Text(item[0])
         if item.count > 0 {
             List(0 ..< item.count) {
                 fav in
@@ -23,7 +22,6 @@ struct FavListView: View {
                         Text("💡")
                     }
                     .buttonStyle(PlainButtonStyle())
-//                    Text(item[fav])
                     NavigationLink(destination: TranslateView(phrase: item[fav])) {
                         Text(item[fav])
                            

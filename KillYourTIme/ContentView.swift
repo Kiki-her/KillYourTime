@@ -23,8 +23,6 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
         ZStack {
-//            Color("backgroundPhrase")
-//                .ignoresSafeArea()
             Image("light")
                 .resizable()
                 .ignoresSafeArea()
@@ -103,18 +101,11 @@ struct ContentView: View {
                     .clipShape(RoundedRectangle(cornerRadius: 10))
             }
         }
-//            List(favorite.favList) {
-//                fav in
-//                HStack {
-//                    Text(fav.phrase)
-//                }
-//            }
         }
         }
         .toolbar {
             let items = favorite.pickText()
             ToolbarItem(placement: .navigationBarTrailing) {
-//                NavigationLink(destination: FavListView(item: favorite.pickText()))
                 NavigationLink(destination: FavListView(item: items)) {
                     Text("Favorite List")
                         .foregroundColor(Color .white)

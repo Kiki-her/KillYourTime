@@ -66,12 +66,9 @@ struct TranslateView: View {
                         .font(.system(size: 30, weight: .heavy))
                 })
                 Button(action: {
-//                    Task {
-//                        await  speech.reading(en: phrase, ja: translatedText)
-//                    }
                    
                     speech.speeche(text: phrase)
-//                    speech.speecheJA(text: translatedText)
+
                 }, label: {
                     Text("💡")
                         .font(.title)

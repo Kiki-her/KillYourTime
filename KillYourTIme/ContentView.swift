@@ -33,6 +33,7 @@ struct ContentView: View {
                 .font(.system(.body, design: .serif))
                 .italic()
                 .frame(width: 320)
+                .foregroundColor(Color.black)
             .padding()
             .background(Color("backgroundText"))
             HStack {

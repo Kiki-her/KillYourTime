@@ -26,6 +26,7 @@ struct FavListView: View {
 //                    Text(item[fav])
                     NavigationLink(destination: TranslateView(phrase: item[fav])) {
                         Text(item[fav])
+                            .foregroundColor(Color.black)
                            
                     }
                 }

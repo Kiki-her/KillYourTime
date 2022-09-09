@@ -77,13 +77,13 @@ struct TranslateView: View {
                         .font(.title)
                 })
                 }
-                Text((phrase ?? "") as String)
+                Text((phrase ) as String)
                     .frame(width: 320)
                     .foregroundColor(Color.black)
                 .padding()
                 .background(Color("backgroundText"))
                 
-                Text((translatedText ?? "") as String)
+                Text((translatedText ) as String)
                     .frame(width: 320)
                     .foregroundColor(Color.black)
                 .padding()

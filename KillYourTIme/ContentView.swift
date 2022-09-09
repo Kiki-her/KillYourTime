@@ -41,10 +41,10 @@ struct ContentView: View {
                     Task {
                                   await adviceData.getAdvice()
                        
-                        var _buzzWord = await buzz.getBuzz()
-                                    var _pascalPhrase = pascalData.getPascal()
-                                    var _jokePhrase = jokeData.getJoke()
-                                    var num = Int.random(in: 1..<8)
+                        let _buzzWord = await buzz.getBuzz()
+                        let _pascalPhrase = pascalData.getPascal()
+                        let _jokePhrase = jokeData.getJoke()
+                        let num = Int.random(in: 1..<8)
                                     if num == 3 {
                                         str = _jokePhrase
                                     } else if num == 5{
@@ -109,7 +109,7 @@ struct ContentView: View {
         }
         }
         .toolbar {
-            var items = favorite.pickText()
+            let items = favorite.pickText()
             ToolbarItem(placement: .navigationBarTrailing) {
 //                NavigationLink(destination: FavListView(item: favorite.pickText()))
                 NavigationLink(destination: FavListView(item: items)) {
